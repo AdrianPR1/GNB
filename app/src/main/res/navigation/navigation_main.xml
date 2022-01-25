@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gnb.ui.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_transactionsFragment"
+            app:destination="@id/transactionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.gnb.ui.transactions.TransactionsFragment"
+        android:label="transactions_fragment"
+        tools:layout="@layout/transactions_fragment" >
+        <argument
+            android:name="sku"
+            app:argType="string" />
+    </fragment>
+</navigation>

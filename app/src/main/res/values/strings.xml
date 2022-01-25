@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GNB</string>
+    <string name="loading_products_description">Estamos cargando la lista de productos espere unos segundos…</string>
+    <string name="description_start_text">Seleccione el producto y pulse el botón para continuar</string>
+    <string name="ok">Aceptar</string>
+    <string name="total_label">Total: </string>
+    <string name="euro_currency"> EUR</string>
+    <string name="calculating_transactions">Calculando transacciones…</string>
+</resources>
